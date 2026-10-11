@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CollectionIntro from './components/CollectionIntro';
@@ -7,11 +7,12 @@ import VideoStorySection from './components/VideoStorySection';
 import MaterialCraftSection from './components/MaterialCraftSection';
 import StoriesSection from './components/StoriesSection';
 import Footer from './components/Footer';
-import RugDetailModal from './components/RugDetailModal';
-import QuoteDrawer from './components/QuoteDrawer';
-import BrandGuidelinesPage from './pages/BrandGuidelinesPage';
 import CustomCursor from './components/CustomCursor';
 import { RUGS } from './data/collectionData';
+
+const RugDetailModal = lazy(() => import('./components/RugDetailModal'));
+const QuoteDrawer = lazy(() => import('./components/QuoteDrawer'));
+const BrandGuidelinesPage = lazy(() => import('./pages/BrandGuidelinesPage'));
 
 export default function App() {
   const [currentView, setCurrentView] = useState(() => {
@@ -66,7 +67,9 @@ export default function App() {
 
       {/* VIEW 1: DEDICATED BRAND GUIDELINES FULL PAGE */}
       {currentView === 'guidelines' ? (
-        <BrandGuidelinesPage onNavigateHome={() => navigateTo('home')} />
+        <Suspense fallback={<div className="min-h-screen bg-[#F7F5F0] flex items-center justify-center font-cormorant text-2xl tracking-widest">LOADING GUIDELINES...</div>}>
+          <BrandGuidelinesPage onNavigateHome={() => navigateTo('home')} />
+        </Suspense>
       ) : (
         /* VIEW 2: MAIN COLLECTION LANDING PAGE */
         <>
@@ -114,29 +117,33 @@ export default function App() {
 
       {/* Rug Inspection Modal */}
       {selectedRug && (
-        <RugDetailModal
-          rug={selectedRug}
-          rugs={RUGS}
-          onClose={(nextRug) => {
-            if (nextRug) {
-              setSelectedRug(nextRug);
-            } else {
+        <Suspense fallback={null}>
+          <RugDetailModal
+            rug={selectedRug}
+            rugs={RUGS}
+            onClose={(nextRug) => {
+              if (nextRug) {
+                setSelectedRug(nextRug);
+              } else {
+                setSelectedRug(null);
+              }
+            }}
+            onOpenQuote={(rug) => {
               setSelectedRug(null);
-            }
-          }}
-          onOpenQuote={(rug) => {
-            setSelectedRug(null);
-            handleOpenQuote(rug);
-          }}
-        />
+              handleOpenQuote(rug);
+            }}
+          />
+        </Suspense>
       )}
 
       {/* Quote & Bespoke Specification Drawer */}
-      <QuoteDrawer
-        isOpen={isQuoteOpen}
-        onClose={() => setIsQuoteOpen(false)}
-        preselectedRug={quoteRug}
-      />
+      <Suspense fallback={null}>
+        <QuoteDrawer
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+          preselectedRug={quoteRug}
+        />
+      </Suspense>
     </div>
   );
 }

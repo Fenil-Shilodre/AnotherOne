@@ -97,6 +97,7 @@ export default function VideoStorySection() {
                 playsInline
                 loop
                 muted={isMuted}
+                preload="metadata"
                 onTimeUpdate={handleTimeUpdate}
                 onLoadedMetadata={handleLoadedMetadata}
                 className="w-full h-full object-cover scale-[1.18] -translate-x-[2%] -translate-y-[2%] filter contrast-[1.05]"

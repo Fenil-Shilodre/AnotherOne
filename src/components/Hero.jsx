@@ -20,10 +20,12 @@ export default function Hero({ onExploreClick }) {
         <video
           ref={videoRef}
           src="/assets/videos/hero-manifesto.mp4"
+          poster="/assets/videos/hero-poster.jpg"
           autoPlay
           loop
           muted={isMuted}
           playsInline
+          preload="auto"
           className="w-full h-full object-cover scale-[1.24] -translate-x-[2%] -translate-y-[2%] filter brightness-[0.82] contrast-[1.06]"
         />
         {/* Soft luxury film tone overlay */}
