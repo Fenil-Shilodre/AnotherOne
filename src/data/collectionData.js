@@ -2,7 +2,7 @@ export const COLLECTION_INFO = {
   title: "ANOTHER ONE",
   subtitle: "HOUSE OF KNOTS | HOUSE ORIGINALS",
   tagline: "Woven Works of Art for Contemporary Architecture",
-  curation: "SURAT • KATHMANDU",
+  curation: "SURAT",
   year: "2026 EDITION",
   statement:
     "Redefining what modern design looks like on the floor. Each rug in ANOTHER ONE creates sacred spaces and sculptural narratives, blurring the boundaries between architectural function and fine art.",

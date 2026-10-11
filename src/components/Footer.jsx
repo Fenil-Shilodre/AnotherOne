@@ -29,7 +29,7 @@ export default function Footer({ onOpenGuidelines }) {
               "We make rugs that breathe with the architecture of your life. Hand-knotted by Tibetan artisans, curated by House of Knots."
             </p>
             <div className="pt-2 text-xs text-neutral-400 font-mono">
-              HOUSE OF KNOTS • SURAT • KATHMANDU
+              HOUSE OF KNOTS • SURAT
             </div>
           </div>
 
@@ -141,7 +141,7 @@ export default function Footer({ onOpenGuidelines }) {
               Gujarat, India
             </p>
             <p className="text-xs text-neutral-400 leading-relaxed pt-2 font-light">
-              Kathmandu Weaving Atelier<br />
+              Himalayan Weaving Atelier<br />
               Nepal
             </p>
           </div>

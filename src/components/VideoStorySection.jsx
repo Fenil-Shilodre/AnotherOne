@@ -172,7 +172,7 @@ export default function VideoStorySection() {
                 Woven in the Shadows of the Himalayas
               </h3>
               <p className="text-neutral-400 font-light text-sm leading-relaxed">
-                In our workshop nestled outside Kathmandu, master Tibetan craftspeople bring European architectural blueprints into physical existence. No electrical machines or synthetic looms are permitted.
+                In our workshop nestled in the Himalayan foothills, master Tibetan craftspeople bring European architectural blueprints into physical existence. No electrical machines or synthetic looms are permitted.
               </p>
             </div>
 

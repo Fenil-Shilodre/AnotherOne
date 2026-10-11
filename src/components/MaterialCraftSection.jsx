@@ -28,7 +28,7 @@ export default function MaterialCraftSection() {
       num: '04',
       title: 'Glacial Rainwater Wash',
       subtitle: 'Cured Beneath the Open Sun',
-      desc: 'Finished carpets are submerged in filtered Himalayan rainwater, rhythmically massaged with wooden paddles, and laid flat on Kathmandu rooftops to dry under the Himalayan sun.',
+      desc: 'Finished carpets are submerged in filtered Himalayan rainwater, rhythmically massaged with wooden paddles, and laid flat on open Himalayan rooftops to dry under the mountain sun.',
       tag: 'Finishing'
     }
   ];
@@ -81,7 +81,7 @@ export default function MaterialCraftSection() {
               </div>
 
               <div className="pt-8 mt-6 border-t border-neutral-200 text-[10px] tracking-widest uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">
-                KATHMANDU ATELIER STANDARD
+                ARTISANAL ATELIER STANDARD
               </div>
             </div>
           ))}

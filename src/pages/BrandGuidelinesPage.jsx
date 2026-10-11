@@ -250,7 +250,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
   const INSTAGRAM_POSTS_9 = [
     {
       id: 1,
-      image: '/assets/guidelines/instagram-hq/post-1.jpg',
+      image: '/assets/guidelines/instagram/insta-1.jpg',
       headline: 'SPACES THAT FEEL LIKE YOU',
       caption: 'Architecture is not merely where we dwell, but the ground upon which our daily thoughts unfold. Introducing the ANOTHER ONE circular edition in mineral sage and nocturnal charcoal.',
       likes: '1,420',
@@ -260,7 +260,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 2,
-      image: '/assets/guidelines/instagram-hq/post-2.jpg',
+      image: '/assets/guidelines/instagram/insta-2.jpg',
       headline: 'ART UNDER YOUR FEET',
       caption: 'Bridging gallery artwork and daily functional comfort. The Carryover Rug in rich ochre and deep indigo mineral dyes, photographed in a Milanese residence.',
       likes: '2,650',
@@ -270,7 +270,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 3,
-      image: '/assets/guidelines/instagram-hq/post-3.jpg',
+      image: '/assets/guidelines/instagram/insta-3.jpg',
       headline: 'TEXTURES THAT LIVE PLAY BELONG',
       caption: '155,000 Tibetan knots per square meter. Hand-sheared relief lines carved by generational craftsmen using raw unbleached Himalayan mountain wool and pure hand-spun mulberry silk.',
       likes: '1,840',
@@ -280,7 +280,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 4,
-      image: '/assets/guidelines/instagram-hq/post-4.jpg',
+      image: '/assets/guidelines/instagram/insta-4.jpg',
       headline: 'RUGS FOR ANOTHER KIND OF HOME',
       caption: 'Warm terracotta arches, Mediterranean morning light, and sculpted Himalayan wool underfoot. Designed for spaces that breathe with intention.',
       likes: '2,150',
@@ -290,8 +290,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 5,
-      // MIDDLE POST: Dedicated pristine logo centerpiece with zero ghosting
-      image: '/assets/guidelines/instagram-hq/post-5.jpg',
+      image: '/assets/guidelines/instagram/insta-5.jpg',
       headline: 'ANOTHER ONE • A NEW RUG COLLECTION',
       caption: 'ANOTHER ONE. Curated by House of Knots | House Originals. A collection of woven works of art hand-knotted in Nepal by master Tibetan artisans. Coming soon to private architectural patrons.',
       likes: '3,890',
@@ -301,9 +300,9 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 6,
-      image: '/assets/guidelines/instagram-hq/post-6.jpg',
+      image: '/assets/guidelines/instagram/insta-6.jpg',
       headline: 'THOUGHTFULLY DESIGNED UNIQUELY YOURS',
-      caption: 'Every curve drawn by hand in our Surat studio, every thread dyed in Kathmandu. Bespoke co-creation with leading architects and interior studios worldwide.',
+      caption: 'Every curve drawn by hand in our Surat studio, every thread dyed in our Himalayan ateliers. Bespoke co-creation with leading architects and interior studios worldwide.',
       likes: '1,960',
       comments: '56',
       date: '1 WEEK AGO',
@@ -311,7 +310,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 7,
-      image: '/assets/guidelines/instagram-hq/post-7.jpg',
+      image: '/assets/guidelines/instagram/insta-7.jpg',
       headline: 'TIMELESS RUGS FOR EVERYDAY LIVING',
       caption: 'Pure high-altitude Tibetan wool rolled in organic vegetable pigments: ochre gold, brick terracotta, and indigo midnight. Tactile materiality that endures across generations.',
       likes: '2,480',
@@ -321,7 +320,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 8,
-      image: '/assets/guidelines/instagram-hq/post-8.jpg',
+      image: '/assets/guidelines/instagram/insta-8.jpg',
       headline: 'ANOTHER KIND OF PERSPECTIVE',
       caption: 'Slow mornings surrounded by sculptural geometries and unhurried textures. Curated by House of Knots. Photographed from above on natural bouclé seating.',
       likes: '2,730',
@@ -331,9 +330,9 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
     },
     {
       id: 9,
-      image: '/assets/guidelines/instagram-hq/post-9.jpg',
+      image: '/assets/guidelines/instagram/insta-9.jpg',
       headline: 'WHERE DESIGN FEELS LIKE HOME',
-      caption: 'Sun-drenched limestone, terracotta portals, and timeless hand-knotted textiles for contemporary living. House of Knots • Surat • Kathmandu.',
+      caption: 'Sun-drenched limestone, terracotta portals, and timeless hand-knotted textiles for contemporary living. House of Knots • Surat.',
       likes: '2,290',
       comments: '71',
       date: '2 WEEKS AGO',
@@ -748,7 +747,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
                 </div>
                 <p className="text-xs sm:text-sm text-neutral-700 font-light leading-relaxed max-w-lg">
                   <strong>HOUSE OF KNOTS | House Originals</strong><br />
-                  Woven works of art hand-knotted by Tibetan artisans. Curated in Surat & Kathmandu.<br />
+                  Woven works of art hand-knotted by Tibetan artisans. Curated in Surat.<br />
                   <span className="text-neutral-500">✦ New Collection: ANOTHER ONE</span>
                 </p>
               </div>
@@ -936,7 +935,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
                 <span>PLUS JAKARTA SANS • LIGHT 300 • LEADING-RELAXED (1.7)</span>
               </div>
               <p className="text-base font-light text-neutral-700 leading-relaxed pt-1 max-w-3xl">
-                Every rug is hand-knotted over 180 days by master Tibetan artisans in Kathmandu, using raw unbleached Himalayan mountain wool and pure hand-spun mulberry silk.
+                Every rug is hand-knotted over 180 days by master Tibetan artisans, using raw unbleached Himalayan mountain wool and pure hand-spun mulberry silk.
               </p>
             </div>
 
@@ -1007,7 +1006,7 @@ export default function BrandGuidelinesPage({ onNavigateHome }) {
                     </div>
                     <div>
                       <span className="font-semibold text-xs block">houseofknots</span>
-                      <span className="text-[10px] text-neutral-400 font-mono">Surat • Kathmandu</span>
+                      <span className="text-[10px] text-neutral-400 font-mono">Surat • Atelier</span>
                     </div>
                   </div>
                   <button

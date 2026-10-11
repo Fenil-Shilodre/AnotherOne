@@ -127,7 +127,7 @@ export default function Header({ onOpenQuote, onSelectRug, onOpenGuidelines }) {
                   {[
                     { label: 'The 6 Rugs', href: '#showcase', count: '06 Editions' },
                     { label: 'Collection Manifesto', href: '#manifesto', count: 'About' },
-                    { label: 'Kathmandu Craftsmanship', href: '#craft', count: 'Artisanal' },
+                    { label: 'Artisanal Craftsmanship', href: '#craft', count: 'Artisanal' },
                     { label: 'The Film', href: '#film', count: 'Documentary' },
                     { label: 'Related Stories', href: '#stories', count: 'Journal' },
                   ].map((item, idx) => (
